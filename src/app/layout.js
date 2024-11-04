@@ -1,5 +1,17 @@
+import localFont from "next/font/local";
 import "./globals.css";
 import TopBanner from "./TopBanner";
+
+const geistSans = localFont({
+  src: "./fonts/Outfit-SemiBold.ttf",
+  variable: "--font-outfit-semibold",
+  weight: "200 800",
+});
+const geistMono = localFont({
+  src: "./fonts/Outfit-Regular.ttf",
+  variable: "--font-outfit-regular",
+  weight: "200 800",
+});
 
 export const metadata = {
   title: "My Kind Of Cruise",

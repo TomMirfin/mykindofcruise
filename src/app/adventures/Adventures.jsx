@@ -3,14 +3,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useEffect, useState } from "react";
-import localFont from "next/font/local";
+
 import AdventureCards from "./AdventureCards";
 import "./adventures.css";
 import { NextArrow, PrevArrow } from "../../../Arrows";
-const outfit = localFont({
-  src: "../fonts/Outfit-Regular.ttf",
-  variable: "--font-outfit-regular",
-});
 
 export default function Adventures() {
   const [adventures, setAdventures] = useState([]);
