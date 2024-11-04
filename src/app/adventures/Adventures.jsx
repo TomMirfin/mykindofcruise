@@ -59,7 +59,7 @@ export default function Adventures() {
         {adventures?.map((adventure) => {
           if (adventure.name && adventure.image) {
             return (
-              <div key={adventure.name} className="adventure-card">
+              <div key={adventure.id} className="adventure-card">
                 <AdventureCards adventure={adventure} />
               </div>
             );

@@ -1,5 +1,4 @@
 import React from "react";
-import banner from "./logo-full-text-white-overlay.b8a950a4.png";
 export default function TopBanner() {
   return (
     <nav className="bg-[#0058a2] h-24 align-middle justify-center items-center">

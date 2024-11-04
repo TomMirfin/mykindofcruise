@@ -5,7 +5,7 @@ export default function CruiseCard({ cruise }) {
     month: "long",
     day: "numeric",
   });
-  console.log(cruise);
+
   return (
     <div className="bg-white overflow-hidden border border-gray-300 rounded-tl-xl rounded-tr-xl">
       <img
@@ -23,12 +23,8 @@ export default function CruiseCard({ cruise }) {
         <p className="mt-2 text-left font-bold text-xs">{cruise.name}</p>
         <p className="text-left font-light text-xs"> {cruise.shipName}</p>
         <p className="text-left font-light text-xs">{sailDate}</p>
-        <p className="text-left font-light text-xs">
-          from <strong className="font-bold">{cruise.startPort}</strong>
-        </p>
-        <div className="text-left font-light text-xs">
-          <strong className="font-bold">£{cruise.price}</strong>
-        </div>
+        <p className="text-left text-xs font-bold">from {cruise.startPort}</p>
+        <p className="text-left text-xs font-bold">£{cruise.price}</p>
       </div>
     </div>
   );
