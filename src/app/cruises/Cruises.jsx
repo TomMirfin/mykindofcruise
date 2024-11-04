@@ -30,11 +30,11 @@ export default function Cruises() {
 
   return (
     <div className="mx-20 mt-10">
-      <h1 className="text-xl font-extrabold font-[var(--font-outfit-semibold)]">
+      <h1 className="text-xl font-extrabold font-[var(--font-outfit-semibold)] ml-4">
         Popular Cruises
       </h1>
 
-      <Slider {...settings} className="mt-8">
+      <Slider {...settings}>
         {cruises?.map((cruise) => {
           return <CruiseCard key={cruise.name} cruise={cruise} />;
         })}

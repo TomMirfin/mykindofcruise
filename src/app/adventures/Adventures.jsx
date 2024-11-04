@@ -51,7 +51,7 @@ export default function Adventures() {
   return (
     <div className="mx-20 mt-10">
       <h1
-        className={`text-xl font-extrabold font-[var(--font-outfit-semibold)]`}
+        className={`text-xl font-extrabold font-[var(--font-outfit-semibold)] ml-4`}
       >
         My Adventures
       </h1>
