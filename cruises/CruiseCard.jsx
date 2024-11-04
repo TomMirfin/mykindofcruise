@@ -5,7 +5,7 @@ export default function CruiseCard({ cruise }) {
     month: "long",
     day: "numeric",
   });
-
+  console.log(cruise);
   return (
     <div className="bg-white shadow-black shadow-md overflow-hidden">
       <img
@@ -20,7 +20,8 @@ export default function CruiseCard({ cruise }) {
         }}
       />
       <div className="p-2 flex-grow">
-        <p className="mt-2 text-left font-semibold text-xs">{cruise.name}</p>
+        <p className="mt-2 text-left font-bold text-xs">{cruise.name}</p>
+        <p className="text-left font-light text-xs"> {cruise.shipName}</p>
         <p className="text-left font-light text-xs">{sailDate}</p>
         <p className="text-left font-light text-xs">
           from <strong className="font-bold">{cruise.startPort}</strong>

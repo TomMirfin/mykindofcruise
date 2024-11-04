@@ -4,6 +4,9 @@ import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import CruiseCard from "./CruiseCard";
+import "./cruises.css";
+import { NextArrow, PrevArrow } from "../Arrows";
+
 export default function Cruises() {
   const [cruises, setCruises] = useState([]);
 
@@ -17,37 +20,6 @@ export default function Cruises() {
       console.error("Error fetching cruises:", error);
     });
   }, []);
-
-  function NextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{
-          ...style,
-          display: "block",
-          background: "#1976d2",
-          borderColor: "#1976d2",
-        }}
-        onClick={onClick}
-      />
-    );
-  }
-  function PrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{
-          ...style,
-          display: "block",
-          background: "#1976d2",
-          borderColor: "#1976d2",
-        }}
-        onClick={onClick}
-      />
-    );
-  }
 
   const settings = {
     slidesToShow: 6,
