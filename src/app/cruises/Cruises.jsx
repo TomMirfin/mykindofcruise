@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import CruiseCard from "./CruiseCard";
 import "./cruises.css";
-import { NextArrow, PrevArrow } from "../Arrows";
+import { NextArrow, PrevArrow } from "../../../Arrows";
 
 export default function Cruises() {
   const [cruises, setCruises] = useState([]);
@@ -36,7 +36,7 @@ export default function Cruises() {
 
       <Slider {...settings} className="mt-8">
         {cruises?.map((cruise) => {
-          return <CruiseCard key={cruise.id} cruise={cruise} />;
+          return <CruiseCard key={cruise.name} cruise={cruise} />;
         })}
       </Slider>
     </div>

@@ -7,7 +7,7 @@ export default function CruiseCard({ cruise }) {
   });
   console.log(cruise);
   return (
-    <div className="bg-white shadow-black shadow-md overflow-hidden">
+    <div className="bg-white overflow-hidden border border-gray-300 rounded-tl-xl rounded-tr-xl">
       <img
         src={cruise.shipImage}
         alt={cruise.name}
@@ -19,16 +19,16 @@ export default function CruiseCard({ cruise }) {
           borderTopRightRadius: "10px",
         }}
       />
-      <div className="p-2 flex-grow">
+      <div className="p-1 flex-grow">
         <p className="mt-2 text-left font-bold text-xs">{cruise.name}</p>
         <p className="text-left font-light text-xs"> {cruise.shipName}</p>
         <p className="text-left font-light text-xs">{sailDate}</p>
         <p className="text-left font-light text-xs">
           from <strong className="font-bold">{cruise.startPort}</strong>
         </p>
-        <p className="text-left font-light text-xs">
+        <div className="text-left font-light text-xs">
           <strong className="font-bold">£{cruise.price}</strong>
-        </p>
+        </div>
       </div>
     </div>
   );
